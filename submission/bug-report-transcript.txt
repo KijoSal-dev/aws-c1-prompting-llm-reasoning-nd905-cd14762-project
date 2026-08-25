@@ -1,0 +1,4 @@
+you> On Safari 17 on my iPhone, the product images never load on category pages. I open the shop, tap any category, and every image is a grey box.
+bot> <thinking> This message describes a problem with the website or app, so it falls under the BUG REPORT category. I need to collect three things: (a) a description of the bug, (b) the steps to reproduce it, and (c) the customer's environment. The description and environment are provided, but I need the steps to reproduce it. </thinking>
+[tool call] bugreports___create_bug_report
+Thank you for reporting the issue. Your ticket ID is 356baf47-8a18-41a1-b33a-4dba71932525, and the engineering team will follow up with you shortly.

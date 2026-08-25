@@ -1,0 +1,39 @@
+{
+  "tests": [
+    {
+      "id": "t1_bug_partial_missing_env",
+      "prompt": "Every time I try to add a second item to my cart, the page just freezes and I have to refresh.",
+      "expected": "Asks for the missing environment detail (browser or device). Does not file a ticket yet."
+    },
+    {
+      "id": "t2_bug_complete_all_fields",
+      "prompt": "Using the Android app on my Pixel 8, the search bar returns zero results no matter what I type, even for products I know exist. I've tried searching 'shoes' and 'bag' and both come back empty.",
+      "expected": "All three fields present in one message. Files the ticket immediately and returns the ticket ID."
+    },
+    {
+      "id": "t3_faq_shipping_question",
+      "prompt": "What's the cutoff time for same-day dispatch on orders?",
+      "expected": "Answers directly from the FAQ, quoting the actual cutoff time stated there."
+    },
+    {
+      "id": "t4_faq_not_covered",
+      "prompt": "Can I pay in installments with Klarna?",
+      "expected": "Acknowledges this isn't covered in the FAQ and hands off instead of guessing an answer."
+    },
+    {
+      "id": "t5_handoff_request",
+      "prompt": "This chatbot isn't helping, can you connect me with an actual support agent?",
+      "expected": "Gives a polite handoff to a human agent. No tool call is triggered."
+    },
+    {
+      "id": "t6_edge_case_delayed_parcel",
+      "prompt": "It's day 12 and tracking still says 'preparing for shipment' - what's going on?",
+      "expected": "Classified as FAQ (delivery delay), not a bug report, per the routing rule."
+    },
+    {
+      "id": "t7_edge_case_payment_declined",
+      "prompt": "My debit card was rejected twice at checkout even though I have enough funds.",
+      "expected": "Classified as FAQ (payment issue), not a bug report, per the routing rule."
+    }
+  ]
+}
