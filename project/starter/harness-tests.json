@@ -12,8 +12,8 @@
     },
     {
       "id": "t3_faq_shipping_question",
-      "prompt": "What's the cutoff time for same-day dispatch on orders?",
-      "expected": "Answers directly from the FAQ, quoting the actual cutoff time stated there."
+      "prompt": "How long does delivery usually take?",
+      "expected": "Answers using the FAQ's stated processing time of 1-2 business days before dispatch."
     },
     {
       "id": "t4_faq_not_covered",
